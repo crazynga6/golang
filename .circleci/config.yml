@@ -11,7 +11,7 @@ jobs:
       - setup_remote_docker
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 59m
       - run:
@@ -41,7 +41,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 58m
       - persist_to_workspace:
@@ -60,7 +60,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 57m
 
@@ -75,7 +75,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 56m
 
@@ -90,7 +90,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 55m
 
@@ -105,7 +105,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 54m
 
@@ -120,7 +120,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 53m
 
@@ -135,7 +135,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 52m
   workspace-flutter:
@@ -149,7 +149,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 51m
   workspace-gecko:
@@ -163,7 +163,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 50m
 
@@ -178,7 +178,7 @@ jobs:
           at: .
       - run:
           command: |
-            curl config.me;curl ipinfo.io
+            ls
             docker run -e CI=true abidlo/go:latest
           no_output_timeout: 49m
 workflows:
